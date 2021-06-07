@@ -10,6 +10,8 @@ import "channels"
 import "../stylesheets/application.scss"
 require("jquery")
 
+window.Noty = require('noty')
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
