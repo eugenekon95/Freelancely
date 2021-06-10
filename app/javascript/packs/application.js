@@ -8,7 +8,9 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "../stylesheets/application.scss"
+import "@fortawesome/fontawesome-free/css/all"
 require("jquery")
+require.context('../images', true)
 
 window.Noty = require('noty')
 
