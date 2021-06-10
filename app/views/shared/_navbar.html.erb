@@ -11,7 +11,7 @@
     </a>
   </div>
 
-  <div class="navbar-menu" id="navbar-menu">
+  <div class="navbar-menu menu" id="navbar-menu">
     <div class="navbar-start">
       <div class="navbar-item">
         <div class="field has-addons">
@@ -39,13 +39,12 @@
         </div>
       </div>
       <%else%>
-      <div class="navbar-item has-dropdown is-hoverable">
+      <div class="navbar-item has-dropdown is-hoverable is transparent">
         <a class="navbar-item"><%= current_user.email%></a>
 
         <div class="navbar-dropdown">
           <%= link_to "Profile",edit_user_registration_path, class: "navbar-item" %>
           <a class="navbar-item">Dashboard</a>
-          <hr class="navbar-divider">
           <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"navbar-item" %>
         </div>
       </div>
@@ -55,8 +54,8 @@
   </div>
 </nav>
 
-<nav class= "navbar has-shadow">
-  <div class="container">
+<nav class="navbar has-shadow menu">
+  <div class="container is-dark">
     <div class="navbar">
     <%= link_to "Dashboard", dashboard_path, class: "navbar-item" %>
       <div class="navbar-item has-dropdown is-hoverable">
