@@ -29,21 +29,7 @@
           <%= f.submit "Log in", class: "button is-link is-fullwidth mt-3 mb-5" %>
         </div>
         <div class="buttons is-centered">
-          <%= link_to user_facebook_omniauth_authorize_path, class: "button is-facebook" do %>
-          <span class="icon">
-            <i class="fab fa-facebook"></i>
-          </span>
-          <% end %>
-         <%= link_to user_facebook_omniauth_authorize_path, class: "button is-github" do %>
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-          <% end %>
-          <%= link_to user_facebook_omniauth_authorize_path, class: "button is-google" do %>
-            <span class="icon">
-            <i class="fab fa-google"></i>
-          </span>
-          <% end %>
+          <%= link_to "Sign in with facebook", user_facebook_omniauth_authorize_path, class: "button is-link", method: :post %>
         </div>
           
         
