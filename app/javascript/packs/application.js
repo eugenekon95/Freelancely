@@ -10,10 +10,13 @@ import "channels"
 import "../stylesheets/application.scss"
 import "@fortawesome/fontawesome-free/css/all"
 require("jquery")
-require.context('../images', true)
+require("packs/toggler")
+
 
 window.Noty = require('noty')
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+require.context('../images', true)
