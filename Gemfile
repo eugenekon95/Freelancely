@@ -23,7 +23,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 #devise
-gem 'devise'
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+#omniauth
+gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+gem 'omniauth-facebook'
+gem 'omniauth-rails_csrf_protection'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

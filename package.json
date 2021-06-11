@@ -9,6 +9,7 @@
     "@rails/webpacker": "5.4.0",
     "bulma": "^0.9.2",
     "bulma-extensions": "^6.2.7",
+    "bulma-social": "^2.0.0",
     "jquery": "^3.6.0",
     "noty": "^3.2.0-beta-deprecated",
     "turbolinks": "^5.2.0",

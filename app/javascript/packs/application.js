@@ -9,6 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "../stylesheets/application.scss"
 import "@fortawesome/fontawesome-free/css/all"
+import "bulma-social/css/all.min.css"
 require("jquery")
 require("packs/toggler")
 
