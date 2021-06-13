@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get '/dashboard', to: 'users#dashboard'
   post 'users/edit', to: 'users#update'
-  get 'users/show'
+  get 'users/:id', to: 'users#show'
   root 'pages#home'
 
   devise_for :users,

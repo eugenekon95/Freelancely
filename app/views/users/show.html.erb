@@ -91,7 +91,18 @@
                                 <hr class="h-10">
                                 
                                 <!-- Linked Account -->
-                                <article class="media"></article>
+                                <article class="media">
+                                   <div class="content">
+                                    <p>
+                                    <strong> Linked Account</strong><br>
+                                      <% if @user.provider %>
+                                        <span class="has-text-success">Facebook verified</span>
+                                        <% else %>
+                                       <span class="has-text-success">Facebook unverified</span>
+                                        <% end %>
+                                    </p>
+                                  </div>
+                                </article>
 
                             </div>
                         </div>
@@ -102,15 +113,35 @@
 
             <!-- RIGHT SIDE -->
             <div class="column">
-                <div class="columns is-multiline">
+               <div class="card">
+                 <div class="card-header">
+                   <div class="card-header-title">Latest Reviews</div>
+                 </div>
+                 <div class="card-content">
+                  <!-- Review -->
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <%= image_tag avatar_url(@user), class:'is-rounded' %>
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                      <p>
+                        <strong>John Doe </strong> <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quidem ex, nulla similique aut fugit minus sunt quis pariatur voluptatum possimus necessitatibus tempore quas autem, expedita nisi asperiores rem officiis.
+                      </p>
+                      <small>25 minutes</small>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="star-review"><i class="fa fa-star"></i>5</span>
+                    </div>
 
-                    <!-- Create New Gig -->
-                    <div class="column is-one-third has-text-centered"></div>
+                  </article>
 
-                    <!-- Sample Gig -->
-                    <div class="column is-one-third has-text-centered"></div>
-                    
-                </div>
+                 </div>
+               </div>
             </div>
             
         </div>

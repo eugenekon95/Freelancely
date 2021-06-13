@@ -157,11 +157,11 @@
                                   <div class="content">
                                     <p>
                                     <strong> Linked Account</strong><br>
-                                      <% if current_user.uid %>
-                                        <span class="has-text-success">Facebook verified</span>
+                                      <% if current_user.provider %>
+                                        <span class="has-text-success"><%="#{current_user.provider.capitalize}"%> account is verified</span>
                                         <% else %>
                                         <%= link_to "Connect to Facebook", user_facebook_omniauth_authorize_path, class: "has-text-info" %>
-
+                                        <%= link_to "Connect to Google", user_google_omniauth_authorize_path, class: "has-text-info" %>
                                         <% end %>
                                     </p>
                                   </div>
