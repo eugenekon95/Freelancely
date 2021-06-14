@@ -1,0 +1,25 @@
+<section class="section">
+  <div class="container">
+    <%= render "shared/steps" %>
+      <!-- FORM TO CREATE A NEW JOB HERE-->
+
+      <%= form_for @job, html: {class: "steps-content m-l-100 m-r-100"}  do |f| %>
+        <div class="field">
+        <label class="label">Job Title</label>
+        <%= f.text_area :title, autocomplete: "title", class: "textarea" %>
+        </div>
+
+        <div class="field">
+        <label class="label">Category</label>
+        <%= f.select(:category_id, options_for_select(@categories.map{ |category| [category.name, category.id] },{ :class => 'select is-fullwidth' }))%>
+        </div>
+
+        <div class="field is-grouped is-grouped-centered m-t-25">
+          <a href="" class="button is-danger">Cancel</a>
+          <%= f.submit " Save & Continue", class: "button is-primary" %>
+        </div>
+      <% end %>
+      
+   
+  </div>
+</section>
